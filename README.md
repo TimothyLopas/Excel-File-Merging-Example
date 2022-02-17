@@ -1,13 +1,1 @@
-# Template: Standard Robot Framework
-
-Want to get started using [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) this is the simplest template to start from.
-
-This template robot:
-
-- Uses [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) syntax.
-- Includes all the necessary dependencies and initialization commands (`conda.yaml`).
-- Provides a simple task template to start from (`tasks.robot`).
-
-## Learning materials
-
-- [All docs related to Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework)
+This robot takes a single Excel workbook with four sheets, reads the data on each sheet and then appends that data to a single sheet in a new Excel workbook. This example also reads the first sheet from four different Excel workbooks, reads the data on the sheets and then appends that data to a single sheet in a new Excel workbook.
