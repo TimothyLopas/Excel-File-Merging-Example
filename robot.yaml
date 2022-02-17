@@ -1,0 +1,12 @@
+tasks:
+  Excel Tasks:
+    robotTaskName: Excel Combination Tasks
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore
