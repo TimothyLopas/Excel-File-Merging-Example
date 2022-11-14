@@ -1,12 +1,21 @@
 *** Settings ***
-Documentation     Template robot main suite.
-Library           RPA.Excel.Files
-Library           Collections
-Library           OperatingSystem
+Documentation       Template robot main suite.
+
+Library             RPA.Excel.Files
+Library             Collections
+Library             OperatingSystem
+
 
 *** Variables ***
-${FILE_NAME}=     Test_Workbook.xlsx
-${MANY_EXCEL_PATH}=    ${CURDIR}${/}ExcelFolder
+${FILE_NAME}=           Test_Workbook.xlsx
+${MANY_EXCEL_PATH}=     ${CURDIR}${/}ExcelFolder
+
+
+*** Tasks ***
+Excel Combination Tasks
+    Multiple Sheets into One Excel Sheet
+    Multiple Files into one Excel Sheet
+
 
 *** Keywords ***
 Multiple Sheets into One Excel Sheet
@@ -43,8 +52,3 @@ Multiple Files into one Excel Sheet
         Append Rows To Worksheet    ${WORKSHEET_DICT.data_${y}}
     END
     Save Workbook    ${OUTPUT_DIR}${/}MultipleWorkbooksToOne.xlsx
-
-*** Tasks ***
-Excel Combination Tasks
-    Multiple Sheets into One Excel Sheet
-    Multiple Files into one Excel Sheet
